@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+
+    --font-Inter-VaraibleFont: "Inter-VaraibleFont", sans-serif;
+    --font-Inter-Bold: "Inter-Bold", sans-serif;
+    --font-Inter-Regular: "Inter-Regular", sans-serif;
+    --font-Inter-SemiBold: "Inter-SemiBold", sans-serif;
+}
+
+@font-face {
+    font-family: "Inter-VaraibleFont";
+    src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+    src: url('./assets/fonts/static/Inter-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url('./assets/fonts/static/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Inter-SemiBold";
+    src: url('./assets/fonts/static/Inter-SemiBold.ttf');
+}
+
+body {
+    padding: 20px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: var(--Grey-900);
+}
+
+.main-container {
+    width: 100%;
+    max-width: 370px;
+    margin: auto;
+    display: flex;
+    border-radius: 16px;
+    flex-direction: column;
+    padding: 36px 16px 36px 16px;
+    background-color: var(--Grey-800);
+}
+
+.wrapper {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.avatar {
+    width: 25%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.avatar-name {
+    font-size: 24px;
+    margin-top: 24px;
+    color: var(--White);
+    font-family: var(--font-Inter-VaraibleFont);
+}
+
+.location {
+    font-size: 14px;
+    margin-top: 10px;
+    color: var(--Green);
+    font-family: var(--font-Inter-SemiBold);
+}
+
+.avatar-description {
+    font-size: 14px;
+    color: var(--White);
+    margin: 24px 0 10px 0;
+    font-family: var(--font-Inter-Regular);
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-link-card {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 16px;
+    max-width: 300px;
+    border-radius: 6px;
+    text-align: center;
+    color: var(--White);
+    background-color: var(--Grey-700);
+    font-family: var(--font-Inter-SemiBold);
+}
+
+.social-link-card:hover {
+    color: var(--Grey-900);
+    background-color: var(--Green);
+    transition: 0.2s ease-in-out;
+}
